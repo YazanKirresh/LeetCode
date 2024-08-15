@@ -28,3 +28,27 @@ public class Main {
         }
     }
 }
+
+
+/*
+ * To use the solution on leetcode , please paste the following:
+ * 
+ * class Solution {
+    public int findLucky(int[] arr) {
+        Arrays.sort(arr);
+        int arrayLength =  arr.length;
+        while (arrayLength > 0){
+            for (int i = arrayLength-1; i > 0; i--){
+                System.out.println("i = " +i);
+                value = arr[i];
+                System.out.println("value = " + value);
+                if (arr[i] ==  arr[i-value+1]){
+                    return arr[i];
+                }
+            }
+            arrayLength--;
+        }
+        return -1;
+} 
+ * 
+ */
